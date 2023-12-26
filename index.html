@@ -1,34 +1,78 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UFT-8">
-    <meta http-equiv="X-UA-Compatible" contents="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal webpage</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="hero">
-      <nav>
-        <img src="logo.png" class="logo" width="100px" height="100px" align="topleft">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
-       </ul>
-      </nav>
-      <div class="detel">
-        <h1>Hi, I am Mohammed <span>Nawf</span></h1>
-        <p>This is my personal website to show my work and skills
-          <br> In coding and programing
-        </p>
-        <a href="#">Know More</a>
-      </div>
-      <div class="images">
-        <img src="sh-removebg-preview.png" class="shape">
-        <img src="me-removebg-preview.png" class="me">
-      </div>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MohdNawf</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Font awesome cdn font icon css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="newlogo.png" type="image/x-icon"> <!-- Corrected type attribute -->
+    </head>
+    <body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        <img src="newlogo.png" alt="MohdNawf"> MohdNawf
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                <div class ="hero-pic">
+                    <img src="l.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm a <span class="input"></span></h5>
+                    <h1>Mohammed Nawf</h1>
+                    <p>I started coding as my hobby, It gradually became my <br>
+                        passion to build a career around it.<br>
+
+                            <br>I am currently studying for BSc Computer Science
+                            at Al Jamia Arts & Science College.This website
+                            showcases some of the projects that<br>I have worked on and also provides an overview about me.</p>
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/mohammed-nawf-b659b5264/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/MohdNawf"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-mail"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+        <script>
+            // Creating button click show hide navbar
+            var togglebtn = document.querySelector(".togglebtn");
+            var nav = document.querySelector(".navlinks");
+
+            togglebtn.addEventListener("click", function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            });
+
+            var typed = new Typed(".input", {
+                strings: ["Web Designer", "Frontend Developer"],
+                typeSpeed: 80,
+                backSpeed: 60,
+                loop: true,
+            });
+        </script>
+    </body>
 </html>
