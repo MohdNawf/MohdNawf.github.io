@@ -71,16 +71,16 @@ nav .togglebtn span{
 }
 nav .navlinks {
     list-style-type: none;
-    color: #ffffff; /* Change this line to your desired color */
-}
+   color: #ffffff; /* Change this line to your desired color */
+} 
 nav .navlinks :hover{
-    color: #e5e5e5;
+    color: #ffffff;
 }
 nav .navlinks li{
     display: inline-block;
 }
 nav .navlinks li{
-    color: #e5e5e5;
+     color: #e5e5e5;
     margin-right: 2.5rem;
 }
 .container {
@@ -176,7 +176,7 @@ nav .navlinks li{
         nav .navlinks {
             position: absolute;
             top: 110px;
-            right: 0; /* Change this line */
+            right: -100%; /* Change this line */
             width: 60%;
             bottom: 0;
             height: 100vh;
