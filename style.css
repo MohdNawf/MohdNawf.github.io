@@ -208,3 +208,8 @@ nav .navlinks li{
         padding: 40px 0px;
     }
 }
+.hero-text h5 {
+    color: #ffffff; /* Change this line to your desired color */
+    font-size: 18px; /* You can adjust the font size if needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
